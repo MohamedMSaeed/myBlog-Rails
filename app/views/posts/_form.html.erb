@@ -29,12 +29,21 @@
     </div>
   </div>
 
+<div class="form-group">
+    <div class="control-label col-md-1">
+      <%= form.label :user_id %>
+    </div>
+    <div class="col-md-11">
+      <%= form.text_field :user_id, id: :post_user_id %>
+    </div>
+  </div>
+
   <div class="form-group">
     <div class="col-md-offset-1 col-md-11">
       <%= form.submit class: 'btn btn-primary btn-lg pull-right' %>
     </div>
   </div>
 
-  <%= form.hidden_field :user_id, id: :post_user_id %>
+
 
 <% end %>
